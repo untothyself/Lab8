@@ -16,5 +16,14 @@ using namespace std;
  */
 int main()
 {
+    // Create a regular integer in the stack.
+    int stackInt = 10;
+
+    // Create an integer on the heap with a starting value of 20.
+    int *heapInt = new int(20);
+
+    // Clean up the heap memory when we are done using it.
+    delete heapInt;
+    heapInt = nullptr;
     return 0;
 }
