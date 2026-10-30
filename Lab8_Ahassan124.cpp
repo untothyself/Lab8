@@ -22,6 +22,12 @@ int main()
     // Create an integer on the heap with a starting value of 20.
     int *heapInt = new int(20);
 
+    // Point to the stack variable so we can access it another way.
+    int* ptrToStack = &stackInt;
+
+    // Give stackInt another name using a reference.
+    int& refToStack = stackInt;
+
     // Clean up the heap memory when we are done using it.
     delete heapInt;
     heapInt = nullptr;
